@@ -1,14 +1,15 @@
 version: 2
 
 sources:
-  - name: gz_raw_data
-    description: raw fata from greenweez
-    tables: 
-      - name: raw_gz_product
-        description: raw greenweez product data
-      - name: raw_gz_sales
-        description: raw greenweez sales data
-      - name: raw_gz_ship
-        description: raw greenweez shipping data 
+sources:
+  - name: raw
+    schema: gz_raw_data
+    tables:
+      - name: sales
+        identifier: raw_gz_sales
+      - name: product
+        identifier: raw_gz_product
+      - name: ship
+        identifier: raw_gz_ship
 
       
